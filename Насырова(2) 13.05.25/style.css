@@ -1,0 +1,125 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #8DD83D;
+  margin-bottom: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #107c10;
+}
+
+.search input {
+  background-color: #373A3C;
+  border: 1px solid #373A3C;
+  padding: 8px 15px;
+  border-radius: 4px;
+  color: #fff;
+  width: 200px;
+}
+
+/* Game Page Styles */
+.game-page {
+  padding: 50px 0;
+  background: url('img/CoD-WWII.png');
+}
+
+.game-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.game-header h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.release-date {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.game-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.btn-primary {
+  background-color: #8DD83D;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #8DD83D;
+}
+
+.btn-secondary {
+  background-color: #8DD83D;
+  color: #fff;
+  border: 1px solid #8DD83D;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #8DD83D;
+}
