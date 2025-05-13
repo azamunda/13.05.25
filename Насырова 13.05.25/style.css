@@ -1,0 +1,309 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #107c10;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0e6e0e;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Header Styles */
+header {
+  background-color: #000;
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #107c10;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('img/Star-Wars-Battlefront-II-combat.png') no-repeat center center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+/* Exclusive Games Section */
+.exclusive-games {
+  padding: 60px 0;
+  background-color: #0e0e0e;
+  background: url('img/Rectangle.png') no-repeat center center;
+}
+
+.exclusive-games h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.game-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.game-card h3 {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.game-card p {
+  padding: 0 15px 15px;
+  color: #aaa;
+}
+
+.game-card .btn-outline {
+  margin: 0 15px 15px;
+  display: block;
+  text-align: center;
+}
+
+/* Design Lab Section */
+.design-lab {
+  padding: 80px 0;
+  text-align: center;
+  background: url('img/Rectangle1.png') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.design-lab::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.design-lab .container {
+  position: relative;
+  z-index: 2;
+}
+
+.design-lab h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.design-lab p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #000;
+  padding: 60px 0 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-logo img {
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #107c10;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.language-selector {
+  cursor: pointer;
+}
+
+.language-selector:hover {
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+
+  .nav-links {
+      margin: 20px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .hero h1 {
+      font-size: 32px;
+  }
+
+  .hero-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero-text {
+      text-align: center;
+  }
+}
